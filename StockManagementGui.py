@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# titel:			Lagerverwaltung mit Python
-# version:			GUI_V2.5
-# author:			Toby Barnes
+# titel:		Lagerverwaltung mit Python
+# version:		GUI_V2.5
+# programm:		StockManagement.py
+# author:		Toby Barnes
 # creation date: 	17.03.2018
 # submission date:	12.04.2018
 
@@ -61,19 +62,19 @@ class GuiWidget(QtGui.QWidget):
 	button = [0,1,2,3,4]
 	button_title = [u"Material auffüllen", "Material beziehen", u"Material eröffnen", "Programm schliessen"]
 	button_style_sheet = ["background-color:rgb(0,100,255,30)",		#rgb color = light blue with 30% transparency
-			"background-color:rgb(255,255,0,30)",					#rgb color = yellow with 30% transparency
-			"background-color:rgb(0,255,0,30)",						#rgb color = green with 30% transparency
-			"background-color:rgb(255,0,0,30)"]						#rgb color = red with 30% transparency
+			"background-color:rgb(255,255,0,30)",			#rgb color = yellow with 30% transparency
+			"background-color:rgb(0,255,0,30)",			#rgb color = green with 30% transparency
+			"background-color:rgb(255,0,0,30)"]			#rgb color = red with 30% transparency
 	feature = ["add","take","open"]
 
 	for n in range(4):
-		# the fourth button is used to shut the program down
+	# the fourth button is used to shut the program down
 	    if n == 3:
 		button[n] = QtGui.QPushButton(button_title[n])
 		button[n].clicked.connect(lambda clicked, n=n: destruktor_ptr())
 		button[n].setStyleSheet(button_style_sheet[n])
 		layout_grid.addWidget(button[n],0,n)
-		# the other buttons open a popup
+	# the other buttons open a popup
 	    else:
 		button[n] = QtGui.QPushButton(button_title[n])
 		button[n].clicked.connect(lambda clicked, n=n: popup_ptr(feature[n]))
@@ -106,7 +107,7 @@ class GuiWidget(QtGui.QWidget):
 	for y in range(max_label_y):
 	    for x in range(length_csv_x):
 		if (y < length_csv_y) and (x < length_csv_x):
-			# the current string has to be decoded to the ascii utf-8
+		# the current string has to be decoded to the ascii utf-8
 		    decoded_text = (list_csv[y][x]).decode("utf-8")
 		    self.material[y][x] = QtGui.QLabel(decoded_text)
 		    layout_grid.addWidget((self.material[y][x]), y+2, x)
@@ -114,7 +115,7 @@ class GuiWidget(QtGui.QWidget):
 		    self.material[y][x] = QtGui.QLabel("")
 		    layout_grid.addWidget((self.material[y][x]), y+2, x)
 		if ((y % 2) == 1):
-			#rgb color = light grey with 30% transparency
+		#rgb color = light grey with 30% transparency
 		    self.material[y][x].setStyleSheet("background-color:rgb(230,230,230)")
 
 	# the buttons that navigate throo the material list is defined 
