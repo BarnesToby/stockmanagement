@@ -3,7 +3,7 @@
 
 # titel:		Lagerverwaltung mit Python
 # version:		GUI_V2.5
-# programm:		StockManagement.py
+# programm:		StockManagementGui.py
 # author:		Toby Barnes
 # creation date: 	17.03.2018
 # submission date:	12.04.2018
