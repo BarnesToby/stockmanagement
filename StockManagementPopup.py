@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# titel:			Lagerverwaltung mit Python
-# version:			GUI_V2.5
-# author:			Toby Barnes
+# titel:		Lagerverwaltung mit Python
+# version:		GUI_V2.5
+# programm:		StockManagementPopup.py
+# author:		Toby Barnes
 # creation date: 	17.03.2018
 # submission date:	12.04.2018
 
