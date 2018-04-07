@@ -76,7 +76,7 @@ def changepage(number):
     global page
     tempvar = (int(page)+int(number))
     if(page == 0):
-	if((tempvar < (getmaxpages())) and (tempvar > 0)):
+	if((tempvar <= (getmaxpages())) and (tempvar > 0)):
 	    page = tempvar
     elif(page == (getmaxpages())):
 	if(tempvar < (getmaxpages())):
