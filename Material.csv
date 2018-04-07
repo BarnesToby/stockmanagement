@@ -2,7 +2,7 @@
 667-ERJ-3GEYJ102V;distrelec.ch;Widerstand;1k;603;0
 667-ERJ-3GEYJ103V;distrelec.ch;Widerstand;10k;603;0
 667-ERJ-3GEYJ220V;distrelec.ch;Widerstand;22R;603;0
-667-ERJ-3GEYJ104V;distrelec.ch;Widerstand;100k?;603;0
+667-ERJ-3GEYJ104V;distrelec.ch;Widerstand;100k;603;0
 647-UWT1V101MCL1S;distrelec.ch;Elektrolytkondensator;100uF  35V;6.3 x 5.4;0
 667-EEE-FK0J331AP;distrelec.ch;Elektrolytkondensator;330uF  6,3V;SMD d = 8mm;0
 77-VJ0603V105MXQCBC;distrelec.ch;Keramikkondensator;1uF;603;0
@@ -10,8 +10,8 @@
 77-VJ0603A180FXACBC;distrelec.ch;Keramikkondensator;18pF;603;0
 581-06035C104KAT2A;distrelec.ch;Keramikkondensator;100nF  50V;603;0
 963-LK1608100K-T;distrelec.ch;Induktiviät;10uH;603;0
-710-742863147;distrelec.ch;Ferritperle;470? @ 100MHz;603;0
-710-742792608;distrelec.ch;Ferritperle;47? @ 100MHz;603;0
+710-742863147;distrelec.ch;Ferritperle;470nH @ 100MHz;603;0
+710-742792608;distrelec.ch;Ferritperle;47nH @ 100MHz;603;0
 576-2920L050;distrelec.ch;Polisicherung ;500mA;2920;0
 520-CSM1600-20-X;distrelec.ch;Quarz;16MHz;HC49;0
 520-ECS-3276-18-9X;distrelec.ch;Quarz;32.768kHz;TC38;0
